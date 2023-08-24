@@ -30,7 +30,11 @@ struct LandmarkDetail: View {
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .font(.title)
-                
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
                 
                 HStack {
                     Text(landmark.park)
