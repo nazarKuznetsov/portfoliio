@@ -15,7 +15,7 @@ struct Profile {
     
     static let `default` = Profile(username: "g_kumar")
     
-    enum Season: String, CaseIterable, Codable {
+    enum Season: String, CaseIterable, Codable, Identifiable {
         case spring = "🌷"
         case summer = "🌞"
         case autumn = "🍂"
