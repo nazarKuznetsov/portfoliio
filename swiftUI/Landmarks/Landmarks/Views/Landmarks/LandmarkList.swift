@@ -11,11 +11,26 @@ struct LandmarkList: View {
     
     @EnvironmentObject var modelData: ModelData
     @State private var showfavoritesOnly = false
+    @State private var filter = FilterCategory.all
+    
+    enum FilterCategory: String, CaseIterable, Identifiable {
+        case all = "All"
+        case lakes = "Lakes"
+        case mountains = "Mountains"
+        case rivers = "Rivers"
+        
+        var id: FilterCategory { self }
+    }
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
-            !showfavoritesOnly || landmark.isFavorite
+            (!showfavoritesOnly || landmark.isFavorite) && (filter == .all || filter.rawValue == landmark.category.rawValue)
         }
+    }
+    
+    var title: String {
+        let title = filter == .all ? "Landmarks": filter.rawValue
+        return showfavoritesOnly ? "Favorite \(title)" : title
     }
     
     var body: some View {
@@ -32,7 +47,28 @@ struct LandmarkList: View {
                     }
                 }
             }
-            .navigationTitle("Landmarks")
+            .navigationTitle(title)
+            .frame(minWidth: 300)
+            .toolbar {
+                ToolbarItem {
+                    Menu {
+                        
+                        Picker("Category", selection: $filter) {
+                            ForEach(FilterCategory.allCases) { category in
+                                Text(category.rawValue).tag(category)
+                            }
+                        }
+                        .pickerStyle(.inline)
+                        
+                        Toggle(isOn: $showfavoritesOnly) {
+                            Label("Favorites only", systemImage: "star.fill")
+                        }
+                    } label: {
+                        Label("Filter", systemImage: "slider.horizontal.3")
+                    }
+                }
+            }
+            Text("Select a Landmark")
         }
     }
 }
