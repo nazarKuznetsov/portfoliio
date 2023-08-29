@@ -10,7 +10,7 @@ import SwiftUI
 struct CoinRowView: View {
     
     let coin: CoinModel
-    let showHoldingsCount: Bool = true
+    let showHoldingsCount: Bool 
     
     var body: some View {
         HStack(spacing: 0) {
@@ -27,11 +27,11 @@ struct CoinRowView: View {
     }
 }
 
-struct CoinRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoinRowView(coin: dev.coin)
-    }
-}
+//struct CoinRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CoinRowView(coin: dev.coin)
+//    }
+//}
 
 extension CoinRowView {
     private var leadingColumn: some View {
@@ -68,6 +68,6 @@ extension CoinRowView {
                     Color.theme.green : Color.theme.red
                 )
         }
-        .frame(width: UIScreen.main.bounds.width / 3, alignment: .trailing)
+        .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
     }
 }
