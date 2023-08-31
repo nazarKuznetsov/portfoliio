@@ -27,11 +27,11 @@ struct CoinRowView: View {
     }
 }
 
-//struct CoinRowView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CoinRowView(coin: dev.coin)
-//    }
-//}
+struct CoinRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        CoinRowView(coin: dev.coin, showHoldingsCount: true)
+    }
+}
 
 extension CoinRowView {
     private var leadingColumn: some View {
@@ -40,7 +40,7 @@ extension CoinRowView {
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
                 .frame(minWidth: 30)
-            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .font(.headline)
