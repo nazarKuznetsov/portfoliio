@@ -13,6 +13,10 @@
 		840A335E2A9E001F00ACCE5B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A335D2A9E001F00ACCE5B /* Double.swift */; };
 		840A33602A9E0CA600ACCE5B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A335F2A9E0CA600ACCE5B /* HomeViewModel.swift */; };
 		840A33662A9E2A5A00ACCE5B /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A33652A9E2A5A00ACCE5B /* CoinDataService.swift */; };
+		842ADBB72AA1D3180002F6A6 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ADBB62AA1D3180002F6A6 /* MarketDataModel.swift */; };
+		842ADBB92AA1D5BA0002F6A6 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ADBB82AA1D5BA0002F6A6 /* MarketDataService.swift */; };
+		842ADBBB2AA1DBD90002F6A6 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ADBBA2AA1DBD90002F6A6 /* PortfolioView.swift */; };
+		842ADBBF2AA1E70B0002F6A6 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ADBBE2AA1E70B0002F6A6 /* CoinLogoView.swift */; };
 		844021C32A9DDEE800D9CF28 /* MyCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844021C22A9DDEE800D9CF28 /* MyCryptoApp.swift */; };
 		844021C52A9DDEE800D9CF28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844021C42A9DDEE800D9CF28 /* ContentView.swift */; };
 		844021CA2A9DDEEA00D9CF28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844021C92A9DDEEA00D9CF28 /* Preview Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		840A335D2A9E001F00ACCE5B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		840A335F2A9E0CA600ACCE5B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		840A33652A9E2A5A00ACCE5B /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		842ADBB62AA1D3180002F6A6 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		842ADBB82AA1D5BA0002F6A6 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		842ADBBA2AA1DBD90002F6A6 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		842ADBBE2AA1E70B0002F6A6 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		844021BF2A9DDEE800D9CF28 /* MyCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844021C22A9DDEE800D9CF28 /* MyCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCryptoApp.swift; sourceTree = "<group>"; };
 		844021C42A9DDEE800D9CF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 			children = (
 				840A33572A9DEFAB00ACCE5B /* CoinModel.swift */,
 				8443C6402AA0EC2200C77521 /* StatisticModel.swift */,
+				842ADBB62AA1D3180002F6A6 /* MarketDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,6 +95,7 @@
 			children = (
 				840A33652A9E2A5A00ACCE5B /* CoinDataService.swift */,
 				8443C6362AA0C48400C77521 /* CoinImageService.swift */,
+				842ADBB82AA1D5BA0002F6A6 /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				8443C6342AA0C1F600C77521 /* CoinImageView.swift */,
+				842ADBBE2AA1E70B0002F6A6 /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 				84618C5B2A9DE24F0013ED01 /* HomeView.swift */,
 				840A33592A9DFBDC00ACCE5B /* CoinRowView.swift */,
 				8443C6442AA0EFBA00C77521 /* HomeStatsView.swift */,
+				842ADBBA2AA1DBD90002F6A6 /* PortfolioView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,10 +299,12 @@
 			files = (
 				8443C6412AA0EC2200C77521 /* StatisticModel.swift in Sources */,
 				840A33662A9E2A5A00ACCE5B /* CoinDataService.swift in Sources */,
+				842ADBBF2AA1E70B0002F6A6 /* CoinLogoView.swift in Sources */,
 				840A335A2A9DFBDC00ACCE5B /* CoinRowView.swift in Sources */,
 				840A33602A9E0CA600ACCE5B /* HomeViewModel.swift in Sources */,
 				844021C52A9DDEE800D9CF28 /* ContentView.swift in Sources */,
 				8443C63B2AA0CE8800C77521 /* LocalFileManager.swift in Sources */,
+				842ADBB72AA1D3180002F6A6 /* MarketDataModel.swift in Sources */,
 				84618C5C2A9DE24F0013ED01 /* HomeView.swift in Sources */,
 				8443C6432AA0ED1500C77521 /* StatisticView.swift in Sources */,
 				8443C6352AA0C1F600C77521 /* CoinImageView.swift in Sources */,
@@ -301,9 +315,11 @@
 				8443C63D2AA0DD1E00C77521 /* SearchBarView.swift in Sources */,
 				8443C6322AA0B6BB00C77521 /* NetworkingManager.swift in Sources */,
 				8443C6452AA0EFBA00C77521 /* HomeStatsView.swift in Sources */,
+				842ADBB92AA1D5BA0002F6A6 /* MarketDataService.swift in Sources */,
 				84618C622A9DE8CB0013ED01 /* CircleButtonAnimationView.swift in Sources */,
 				8443C6392AA0C67900C77521 /* CoinImageViewModel.swift in Sources */,
 				840A335C2A9DFC2200ACCE5B /* PreviewProvider.swift in Sources */,
+				842ADBBB2AA1DBD90002F6A6 /* PortfolioView.swift in Sources */,
 				840A335E2A9E001F00ACCE5B /* Double.swift in Sources */,
 				8443C6372AA0C48400C77521 /* CoinImageService.swift in Sources */,
 				840A33582A9DEFAB00ACCE5B /* CoinModel.swift in Sources */,
@@ -442,7 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +487,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
