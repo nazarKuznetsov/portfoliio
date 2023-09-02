@@ -22,10 +22,10 @@ struct PortfolioView: View {
                     SearchBarView(searchText: $homeViewModel.searchText)
                     
                     coinLogoList
-                        
+                    
                     if selectedCoin != nil {
                         
-                            portfolioInputSection
+                        portfolioInputSection
                     }
                 }
             }
@@ -37,6 +37,11 @@ struct PortfolioView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     trailingTabBarButton
                     
+                }
+            }
+            .onChange(of: homeViewModel.searchText) { newValue in
+                if newValue == nil {
+                    removeSelectedCoin()
                 }
             }
         }
@@ -55,7 +60,7 @@ extension PortfolioView {
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: true) {
             LazyHStack(spacing: 10) {
-                ForEach(homeViewModel.allCoin) { coin in
+                ForEach(homeViewModel.searchText.isEmpty ? homeViewModel.portfolioCoins : homeViewModel.allCoin) { coin in
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .padding(4)
@@ -72,6 +77,17 @@ extension PortfolioView {
             }
             .frame(height: 120)
             .padding(.leading)
+        }
+    }
+    
+    private func updateselectedCoin(coin: CoinModel) {
+        selectedCoin = coin
+        
+        if let portfolioCoin = homeViewModel.portfolioCoins.first(where: { $0.id ==  coin.id }),
+           let amount = portfolioCoin.currentHoldings {
+            quantityText = "\(amount)"
+        } else {
+            quantityText = ""
         }
     }
     
@@ -98,7 +114,7 @@ extension PortfolioView {
                     .keyboardType(.decimalPad)
             }
             Divider()
-             HStack {
+            HStack {
                 Text("Current value:")
                 Spacer()
                 Text(getCurrentValue().asCurrencyWith2Decimals())
@@ -135,7 +151,12 @@ extension PortfolioView {
     }
     
     private func saveButtonPressed() {
-        guard let coin = selectedCoin else { return }
+        guard
+            let coin = selectedCoin,
+            let amount = Double(quantityText)
+        else { return }
+        
+        homeViewModel.updatePortfolio(coin: coin, amount: amount)
         
         withAnimation(.easeIn) {
             showCheckmark = true

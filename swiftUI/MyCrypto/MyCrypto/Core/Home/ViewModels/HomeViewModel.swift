@@ -20,6 +20,7 @@ class HomeViewModel: ObservableObject {
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
     private var cancellables = Set<AnyCancellable>()
+    private var portfolioDataService = PortfolioDataService()
     
     init() {
         addSubscribers()
@@ -42,6 +43,26 @@ class HomeViewModel: ObservableObject {
                 self?.statics = returnedStats
             }
             .store(in: &cancellables)
+        
+        $allCoin
+            .combineLatest(portfolioDataService.$savedEntities)
+            .map { coinModels, portfolioEntities -> [CoinModel] in
+                coinModels
+                    .compactMap { coin -> CoinModel? in
+                        guard let entity = portfolioEntities.first(where: { $0.coinId == coin.id }) else {
+                            return nil
+                        }
+                        return coin.updateHoldings(amount: entity.amount)
+                    }
+            }
+            .sink { [weak self] returnedCoin in
+                self?.portfolioCoins = returnedCoin
+            }
+            .store(in: &cancellables)
+    }
+    
+    func updatePortfolio(coin: CoinModel, amount: Double) {
+        portfolioDataService.update(coin: coin, amount: amount)
     }
     
     private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
