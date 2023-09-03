@@ -12,6 +12,8 @@ struct HomeView: View {
     @EnvironmentObject private var homeViewModel: HomeViewModel
     @State private var showPortfolio: Bool = false
     @State private var showPortfolioView: Bool = false
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showDetailView: Bool = false
     
     var body: some View {
         ZStack {
@@ -41,6 +43,14 @@ struct HomeView: View {
             }
             .padding(.trailing, 10)
         }
+        .background(
+            NavigationLink(
+                destination: DetailLoadingView(coin: $selectedCoin),
+                isActive: $showDetailView,
+                label: {
+                    EmptyView()
+                })
+        )
     }
 }
 
@@ -88,6 +98,7 @@ extension HomeView {
     private var allCoinsList: some View {
         List {
             ForEach(homeViewModel.allCoin) { coin in
+                
                 CoinRowView(coin: coin, showHoldingsCount: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
@@ -100,9 +111,17 @@ extension HomeView {
             ForEach(homeViewModel.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsCount: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
         }
         .listStyle(.plain)
+    }
+    
+    private func segue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
     }
     
     private var columnTitles: some View {
@@ -154,7 +173,7 @@ extension HomeView {
                 Image(systemName: "goForward")
             }
             .rotationEffect(Angle(degrees: homeViewModel.isLoading ? 360 : 0), anchor: .center)
-
+            
         }
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
