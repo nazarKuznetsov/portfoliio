@@ -39,9 +39,8 @@ struct HomeView: View {
                     portfolioCoinsList
                         .transition(.move(edge: .trailing))
                 }
-                
+                Spacer(minLength: 10)
             }
-            .padding(.trailing, 10)
         }
         .background(
             NavigationLink(
@@ -170,7 +169,7 @@ extension HomeView {
                     homeViewModel.reloadData()
                 }
             } label: {
-                Image(systemName: "goForward")
+                Image(systemName: "goforward")
             }
             .rotationEffect(Angle(degrees: homeViewModel.isLoading ? 360 : 0), anchor: .center)
             
