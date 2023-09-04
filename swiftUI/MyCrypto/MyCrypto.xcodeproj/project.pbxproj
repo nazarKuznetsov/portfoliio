@@ -33,6 +33,8 @@
 		8443C6432AA0ED1500C77521 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443C6422AA0ED1500C77521 /* StatisticView.swift */; };
 		8443C6452AA0EFBA00C77521 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443C6442AA0EFBA00C77521 /* HomeStatsView.swift */; };
 		8453F8682AA5F4700045E3F1 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453F8672AA5F4700045E3F1 /* SettingView.swift */; };
+		8453F86D2AA601470045E3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8453F86C2AA601470045E3F1 /* LaunchScreen.storyboard */; };
+		8453F86F2AA602C10045E3F1 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453F86E2AA602C10045E3F1 /* LaunchView.swift */; };
 		84618C5C2A9DE24F0013ED01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84618C5B2A9DE24F0013ED01 /* HomeView.swift */; };
 		84618C602A9DE3F50013ED01 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84618C5F2A9DE3F50013ED01 /* CircleButtonView.swift */; };
 		84618C622A9DE8CB0013ED01 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84618C612A9DE8CB0013ED01 /* CircleButtonAnimationView.swift */; };
@@ -77,6 +79,9 @@
 		8443C6422AA0ED1500C77521 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		8443C6442AA0EFBA00C77521 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		8453F8672AA5F4700045E3F1 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8453F8692AA600E50045E3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8453F86C2AA601470045E3F1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8453F86E2AA602C10045E3F1 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		84618C5B2A9DE24F0013ED01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		84618C5F2A9DE3F50013ED01 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		84618C612A9DE8CB0013ED01 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 		844021C12A9DDEE800D9CF28 /* MyCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				8453F8692AA600E50045E3F1 /* Info.plist */,
 				8443C6302AA0B68100C77521 /* Utilities */,
 				840A33642A9E2A4300ACCE5B /* Services */,
 				840A33562A9DEF6B00ACCE5B /* Models */,
@@ -217,9 +223,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8453F86A2AA6010B0045E3F1 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				8453F86B2AA601110045E3F1 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		8453F86B2AA601110045E3F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8453F86C2AA601470045E3F1 /* LaunchScreen.storyboard */,
+				8453F86E2AA602C10045E3F1 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		84618C572A9DE2170013ED01 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8453F86A2AA6010B0045E3F1 /* Launch */,
 				8453F8632AA5F4320045E3F1 /* Settings */,
 				84618C5D2A9DE3C30013ED01 /* Components */,
 				84C153D92AA466CF0066EF3E /* Detail */,
@@ -361,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8453F86D2AA601470045E3F1 /* LaunchScreen.storyboard in Resources */,
 				844021D12A9DDFDB00D9CF28 /* Assets.xcassets in Resources */,
 				844021CA2A9DDEEA00D9CF28 /* Preview Assets.xcassets in Resources */,
 			);
@@ -389,6 +414,7 @@
 				8443C6432AA0ED1500C77521 /* StatisticView.swift in Sources */,
 				8443C6352AA0C1F600C77521 /* CoinImageView.swift in Sources */,
 				844021C32A9DDEE800D9CF28 /* MyCryptoApp.swift in Sources */,
+				8453F86F2AA602C10045E3F1 /* LaunchView.swift in Sources */,
 				8443C63F2AA0E20600C77521 /* UIApplication.swift in Sources */,
 				84618C602A9DE3F50013ED01 /* CircleButtonView.swift in Sources */,
 				84C153DF2AA46BAF0066EF3E /* DetailView.swift in Sources */,
@@ -542,9 +568,10 @@
 				DEVELOPMENT_TEAM = DFVUWR494M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,9 +598,10 @@
 				DEVELOPMENT_TEAM = DFVUWR494M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
