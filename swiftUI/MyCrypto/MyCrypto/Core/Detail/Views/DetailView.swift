@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailView: View {
     
     @StateObject private var detailViewModel: DetailViewModel
+    @State private var showFullDescription: Bool = false
+    
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -19,7 +21,7 @@ struct DetailView: View {
     init(coin: CoinModel) {
         _detailViewModel = StateObject(wrappedValue: DetailViewModel(coin: coin))
     }
-    
+
     var body: some View {
         
         ScrollView {
@@ -33,6 +35,8 @@ struct DetailView: View {
                     overviewTitle
                     Divider()
                     
+                    descriptionSection
+                    
                     overviewGrid
                     
                     additionalTitle
@@ -40,17 +44,18 @@ struct DetailView: View {
                     
                     additionalGrid
                     
+                    websiteSection
                 }
                 .padding()
             }
-    }
+        }
         .navigationTitle(detailViewModel.coin.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 navigationBarTrailingItem
             }
         }
-}
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
@@ -60,6 +65,47 @@ struct DetailView_Previews: PreviewProvider {
 }
 
 extension DetailView {
+    
+    private var websiteSection: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            if let websiteString = detailViewModel.websiteURL,
+                let url = URL(string: websiteString) {
+                Link("Website", destination: url)
+            }
+                
+            if let redditString = detailViewModel.redditURL,
+               let url = URL(string: redditString) {
+                Link("Reddit", destination: url)
+            }
+            
+        }.accentColor(.blue)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .font(.headline)
+    }
+    
+    private var descriptionSection: some View {
+        ZStack {
+            if let coinDescription = detailViewModel.coinDescription, !coinDescription.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(coinDescription)
+                        .lineLimit(showFullDescription ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                    Button(action: {
+                        withAnimation(.easeInOut) {
+                            showFullDescription.toggle()
+                        }
+                    }, label: {
+                        Text(showFullDescription ? "Less" : "Read more..")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    }).accentColor(.blue)
+                }.frame(maxWidth: .infinity, alignment: .leading)
+                
+            }
+        }
+    }
     
     private var navigationBarTrailingItem: some View {
         HStack {

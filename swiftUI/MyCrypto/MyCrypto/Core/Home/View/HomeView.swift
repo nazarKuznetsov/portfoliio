@@ -139,15 +139,17 @@ extension HomeView {
             
             Spacer()
             
-            HStack {
-                Text("\(showPortfolio ? "Holding" : "")")
-                Image(systemName: "chevron.down")
-                    .opacity((homeViewModel.sortOption == .holdings || homeViewModel.sortOption == .holdingsReversed) ? 1.0: 0.0)
-                    .rotationEffect(Angle(degrees: homeViewModel.sortOption == .holdings ? 0 : 180))
-            }
-            .onTapGesture {
-                withAnimation(.default){
-                    homeViewModel.sortOption = homeViewModel.sortOption == .holdings ? .holdingsReversed : .holdings
+            if showPortfolio {
+                HStack(spacing: 4.0) {
+                    Text("Holdings")
+                    Image(systemName: "chevron.down")
+                        .opacity((homeViewModel.sortOption == .holdings || homeViewModel.sortOption == .holdingsReversed) ? 1.0 :0.0)
+                        .rotationEffect(Angle(degrees: homeViewModel.sortOption == .holdings ? 0 : 180))
+                }
+                .onTapGesture {
+                    withAnimation(.default) {
+                        homeViewModel.sortOption = (homeViewModel.sortOption == .holdings) ? .holdingsReversed : .holdings
+                    }
                 }
             }
             
