@@ -16,6 +16,7 @@
 		843956A42ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
 		843956A52ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
 		843956A62ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
+		843956A82ADD582500204517 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843956A72ADD582500204517 /* UIExtension.swift */; };
 		845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */; };
 		845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */; };
 		845FA8BE2AD7EADF00939E83 /* FoodShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */; };
@@ -49,6 +50,7 @@
 		843956992ADD535500204517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8439569F2ADD552600204517 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		843956A32ADD555E00204517 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		843956A72ADD582500204517 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		845FA8A92AD7EADD00939E83 /* FoodShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppApp.swift; sourceTree = "<group>"; };
 		845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		8439569D2ADD54DD00204517 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				843956A72ADD582500204517 /* UIExtension.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */,
+				843956A82ADD582500204517 /* UIExtension.swift in Sources */,
 				843956A02ADD552600204517 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
