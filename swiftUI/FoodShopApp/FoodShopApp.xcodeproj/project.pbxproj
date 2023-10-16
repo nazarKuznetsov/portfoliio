@@ -12,10 +12,11 @@
 		843956932ADD3B5A00204517 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */; };
 		843956942ADD3B5A00204517 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843956902ADD3B5A00204517 /* Gilroy-Medium.ttf */; };
 		843956962ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
-		843956972ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
-		843956982ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
+		843956A02ADD552600204517 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439569F2ADD552600204517 /* WelcomeView.swift */; };
+		843956A42ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
+		843956A52ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
+		843956A62ADD555E00204517 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843956A32ADD555E00204517 /* Launch Screen.storyboard */; };
 		845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */; };
-		845FA8AF2AD7EADD00939E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AE2AD7EADD00939E83 /* ContentView.swift */; };
 		845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */; };
 		845FA8BE2AD7EADF00939E83 /* FoodShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */; };
 		845FA8C82AD7EAE000939E83 /* FoodShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8C72AD7EAE000939E83 /* FoodShopAppUITests.swift */; };
@@ -45,9 +46,11 @@
 		8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		843956902ADD3B5A00204517 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		843956952ADD3B8800204517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		843956992ADD535500204517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8439569F2ADD552600204517 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		843956A32ADD555E00204517 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		845FA8A92AD7EADD00939E83 /* FoodShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppApp.swift; sourceTree = "<group>"; };
-		845FA8AE2AD7EADD00939E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845FA8B92AD7EADF00939E83 /* FoodShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppTests.swift; sourceTree = "<group>"; };
@@ -81,7 +84,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8439568C2ADD3B3300204517 /* font */ = {
+		8439568C2ADD3B3300204517 /* Font */ = {
 			isa = PBXGroup;
 			children = (
 				8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */,
@@ -89,7 +92,44 @@
 				8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */,
 				8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */,
 			);
-			path = font;
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8439569A2ADD548E00204517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8439569E2ADD551000204517 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8439569B2ADD549500204517 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8439569C2ADD54A200204517 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8439569D2ADD54DD00204517 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		8439569E2ADD551000204517 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8439569F2ADD552600204517 /* WelcomeView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		845FA8A02AD7EADD00939E83 = {
@@ -115,11 +155,16 @@
 		845FA8AB2AD7EADD00939E83 /* FoodShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				8439569D2ADD54DD00204517 /* UICommon */,
+				8439569C2ADD54A200204517 /* ViewModel */,
+				8439569B2ADD549500204517 /* Model */,
+				8439569A2ADD548E00204517 /* View */,
+				843956992ADD535500204517 /* Info.plist */,
 				843956952ADD3B8800204517 /* Assets.xcassets */,
-				8439568C2ADD3B3300204517 /* font */,
+				8439568C2ADD3B3300204517 /* Font */,
 				845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */,
-				845FA8AE2AD7EADD00939E83 /* ContentView.swift */,
 				845FA8B22AD7EADF00939E83 /* Preview Content */,
+				843956A32ADD555E00204517 /* Launch Screen.storyboard */,
 			);
 			path = FoodShopApp;
 			sourceTree = "<group>";
@@ -259,6 +304,7 @@
 				843956922ADD3B5A00204517 /* Gilroy-SemiBold.ttf in Resources */,
 				843956962ADD3B8800204517 /* Assets.xcassets in Resources */,
 				845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */,
+				843956A42ADD555E00204517 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843956972ADD3B8800204517 /* Assets.xcassets in Resources */,
+				843956A52ADD555E00204517 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843956982ADD3B8800204517 /* Assets.xcassets in Resources */,
+				843956A62ADD555E00204517 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845FA8AF2AD7EADD00939E83 /* ContentView.swift in Sources */,
 				845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */,
+				843956A02ADD552600204517 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +499,15 @@
 				DEVELOPMENT_TEAM = DFVUWR494M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,9 +515,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarKuznetsov.FoodShopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,11 +535,15 @@
 				DEVELOPMENT_TEAM = DFVUWR494M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,9 +551,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarKuznetsov.FoodShopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
