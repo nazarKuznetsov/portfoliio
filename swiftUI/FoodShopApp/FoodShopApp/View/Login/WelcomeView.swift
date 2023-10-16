@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            Image("welcome_bg")
+            Image("welcom_bg")
                 .resizable()
                 .scaledToFill()
         }
