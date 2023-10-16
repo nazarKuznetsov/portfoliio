@@ -34,7 +34,9 @@ struct WelcomeView: View {
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 20)
                 
-               
+                RoundButton(title: "Get Started") {
+                    
+                }
                 
                 Spacer()
                     .frame(height: 20)
