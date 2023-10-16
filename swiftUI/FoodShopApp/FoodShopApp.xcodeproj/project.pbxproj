@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843956912ADD3B5A00204517 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */; };
+		843956922ADD3B5A00204517 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */; };
+		843956932ADD3B5A00204517 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */; };
+		843956942ADD3B5A00204517 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843956902ADD3B5A00204517 /* Gilroy-Medium.ttf */; };
+		843956962ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
+		843956972ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
+		843956982ADD3B8800204517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843956952ADD3B8800204517 /* Assets.xcassets */; };
 		845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */; };
 		845FA8AF2AD7EADD00939E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AE2AD7EADD00939E83 /* ContentView.swift */; };
-		845FA8B12AD7EADF00939E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FA8B02AD7EADF00939E83 /* Assets.xcassets */; };
 		845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */; };
 		845FA8BE2AD7EADF00939E83 /* FoodShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */; };
 		845FA8C82AD7EAE000939E83 /* FoodShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8C72AD7EAE000939E83 /* FoodShopAppUITests.swift */; };
@@ -34,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		843956902ADD3B5A00204517 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		843956952ADD3B8800204517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845FA8A92AD7EADD00939E83 /* FoodShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppApp.swift; sourceTree = "<group>"; };
 		845FA8AE2AD7EADD00939E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		845FA8B02AD7EADF00939E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845FA8B92AD7EADF00939E83 /* FoodShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppTests.swift; sourceTree = "<group>"; };
@@ -71,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8439568C2ADD3B3300204517 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */,
+				843956902ADD3B5A00204517 /* Gilroy-Medium.ttf */,
+				8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */,
+				8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		845FA8A02AD7EADD00939E83 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +115,10 @@
 		845FA8AB2AD7EADD00939E83 /* FoodShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				843956952ADD3B8800204517 /* Assets.xcassets */,
+				8439568C2ADD3B3300204517 /* font */,
 				845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */,
 				845FA8AE2AD7EADD00939E83 /* ContentView.swift */,
-				845FA8B02AD7EADF00939E83 /* Assets.xcassets */,
 				845FA8B22AD7EADF00939E83 /* Preview Content */,
 			);
 			path = FoodShopApp;
@@ -231,8 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843956932ADD3B5A00204517 /* Gilroy-Regular.ttf in Resources */,
+				843956942ADD3B5A00204517 /* Gilroy-Medium.ttf in Resources */,
+				843956912ADD3B5A00204517 /* Gilroy-Bold.ttf in Resources */,
+				843956922ADD3B5A00204517 /* Gilroy-SemiBold.ttf in Resources */,
+				843956962ADD3B8800204517 /* Assets.xcassets in Resources */,
 				845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */,
-				845FA8B12AD7EADF00939E83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843956972ADD3B8800204517 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843956982ADD3B8800204517 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
