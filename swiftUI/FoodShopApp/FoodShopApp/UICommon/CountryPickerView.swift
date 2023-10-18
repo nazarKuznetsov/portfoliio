@@ -9,36 +9,34 @@ import SwiftUI
 import CountryPicker
 
 struct CountryPickerView: UIViewControllerRepresentable {
-     
+    typealias UIViewControllerType = CountryPickerViewController
+
+    let countryPicker = CountryPickerViewController()
+
     @Binding var country: Country?
-    
+
+    func makeUIViewController(context: Context) -> CountryPickerViewController {
+        countryPicker.selectedCountry = "TR"
+        countryPicker.delegate = context.coordinator
+        return countryPicker
+    }
+
+    func updateUIViewController(_ uiViewController: CountryPickerViewController, context: Context) {
+        //
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(self)
+    }
+
     class Coordinator: NSObject, CountryPickerDelegate {
         var parent: CountryPickerView
-        
-        init(parent: CountryPickerView) {
+        init(_ parent: CountryPickerView) {
             self.parent = parent
         }
-        
         func countryPicker(didSelect country: Country) {
             parent.country = country
         }
     }
-    
-    func makeUIViewController(context: Context) -> some CountryPickerViewController {
-        let countryPicker = CountryPickerViewController()
-        countryPicker.selectedCountry = "LV"
-        countryPicker.delegate = context.coordinator
-        
-        return countryPicker
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(parent: self)
-    }
-    
 }
 
