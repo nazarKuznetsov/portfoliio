@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import CountryPicker
 
 struct SignInView: View {
     
     @State var mobileNumber: String = ""
+    @State var isShowPicker: Bool = false
+    @State var selectedCountry: Country?
     
     var body: some View {
         ZStack {
@@ -33,13 +36,19 @@ struct SignInView: View {
                         .padding(.bottom, 20)
                     HStack {
                         Button {
-                            
+                            isShowPicker = true
                         } label: {
-                             Image("")
+                            if let selectedCountry = selectedCountry {
+                                
+                                Text("\(selectedCountry.isoCode.getFlag())")
+                                    .font(.customfont(.medium, fontSize: 20))
+                                
+                                Text("+\(selectedCountry.phoneCode)")
+                                    .font(.customfont(.medium, fontSize: 18))
+                                    .foregroundColor(.primaryText)
+                            }
                             
-                            Text("+380")
-                                .font(.customfont(.medium, fontSize: 18))
-                                .foregroundColor(.primaryText)
+                            
                         }
                         
                         TextField("Enter Mobile", text: $mobileNumber)
@@ -61,12 +70,18 @@ struct SignInView: View {
                 
                 
             }
+            .sheet(isPresented: $isShowPicker, content: {
+                CountryPickerView(country: $selectedCountry)
+            })
             .padding(.horizontal, 20)
             .frame(width: .screenWidth, alignment: .leading)
             .padding(.top, .topInsets + .screenWidth * 0.7 )
             .background(Color.darkGray.opacity(0.1))
             
             
+        }
+        .onAppear {
+            self.selectedCountry = Country(phoneCode: "90", isoCode: "TR")
         }
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
