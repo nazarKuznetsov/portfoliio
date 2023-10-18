@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841219AB2ADFE89D00D64F7C /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841219AA2ADFE89D00D64F7C /* CountryPickerView.swift */; };
 		843956912ADD3B5A00204517 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */; };
 		843956922ADD3B5A00204517 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */; };
 		843956932ADD3B5A00204517 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */; };
@@ -19,6 +20,8 @@
 		843956A82ADD582500204517 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843956A72ADD582500204517 /* UIExtension.swift */; };
 		843956AA2ADD606400204517 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843956A92ADD606400204517 /* RoundButton.swift */; };
 		843956AC2ADD617F00204517 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843956AB2ADD617F00204517 /* SignInView.swift */; };
+		843956AE2ADD7AF300204517 /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843956AD2ADD7AF300204517 /* ConnectButton.swift */; };
+		843956B12ADD820100204517 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 843956B02ADD820100204517 /* CountryPicker */; };
 		845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */; };
 		845FA8B42AD7EADF00939E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */; };
 		845FA8BE2AD7EADF00939E83 /* FoodShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA8BD2AD7EADF00939E83 /* FoodShopAppTests.swift */; };
@@ -44,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841219AA2ADFE89D00D64F7C /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
 		8439568D2ADD3B5A00204517 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		8439568E2ADD3B5A00204517 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		8439568F2ADD3B5A00204517 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		843956A72ADD582500204517 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		843956A92ADD606400204517 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		843956AB2ADD617F00204517 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		843956AD2ADD7AF300204517 /* ConnectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButton.swift; sourceTree = "<group>"; };
 		845FA8A92AD7EADD00939E83 /* FoodShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FA8AC2AD7EADD00939E83 /* FoodShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopAppApp.swift; sourceTree = "<group>"; };
 		845FA8B32AD7EADF00939E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843956B12ADD820100204517 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,8 @@
 			children = (
 				843956A72ADD582500204517 /* UIExtension.swift */,
 				843956A92ADD606400204517 /* RoundButton.swift */,
+				843956AD2ADD7AF300204517 /* ConnectButton.swift */,
+				841219AA2ADFE89D00D64F7C /* CountryPickerView.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -219,6 +227,9 @@
 			dependencies = (
 			);
 			name = FoodShopApp;
+			packageProductDependencies = (
+				843956B02ADD820100204517 /* CountryPicker */,
+			);
 			productName = FoodShopApp;
 			productReference = 845FA8A92AD7EADD00939E83 /* FoodShopApp.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +302,9 @@
 				Base,
 			);
 			mainGroup = 845FA8A02AD7EADD00939E83;
+			packageReferences = (
+				843956AF2ADD820100204517 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = 845FA8AA2AD7EADD00939E83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +354,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841219AB2ADFE89D00D64F7C /* CountryPickerView.swift in Sources */,
+				843956AE2ADD7AF300204517 /* ConnectButton.swift in Sources */,
 				843956AA2ADD606400204517 /* RoundButton.swift in Sources */,
 				845FA8AD2AD7EADD00939E83 /* FoodShopAppApp.swift in Sources */,
 				843956A82ADD582500204517 /* UIExtension.swift in Sources */,
@@ -688,6 +704,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		843956AF2ADD820100204517 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		843956B02ADD820100204517 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 843956AF2ADD820100204517 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 845FA8A12AD7EADD00939E83 /* Project object */;
 }
