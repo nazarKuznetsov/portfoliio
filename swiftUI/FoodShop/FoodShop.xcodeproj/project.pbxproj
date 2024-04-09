@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E22BC5596D0097B036 /* FoodShopApp.swift */; };
-		847994E52BC5596D0097B036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E42BC5596D0097B036 /* ContentView.swift */; };
 		847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994E92BC559730097B036 /* Preview Assets.xcassets */; };
 		847994F42BC559740097B036 /* FoodShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994F32BC559740097B036 /* FoodShopTests.swift */; };
 		847994FE2BC559740097B036 /* FoodShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FD2BC559740097B036 /* FoodShopUITests.swift */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		847994DF2BC5596D0097B036 /* FoodShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847994E22BC5596D0097B036 /* FoodShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopApp.swift; sourceTree = "<group>"; };
-		847994E42BC5596D0097B036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		847994E92BC559730097B036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847994EF2BC559740097B036 /* FoodShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847994F32BC559740097B036 /* FoodShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopTests.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				847995162BC55E2C0097B036 /* Assets.xcassets */,
 				8479950D2BC55CE70097B036 /* font */,
 				847994E22BC5596D0097B036 /* FoodShopApp.swift */,
-				847994E42BC5596D0097B036 /* ContentView.swift */,
 				847994E82BC559730097B036 /* Preview Content */,
 			);
 			path = FoodShop;
@@ -283,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847994E52BC5596D0097B036 /* ContentView.swift in Sources */,
 				847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
