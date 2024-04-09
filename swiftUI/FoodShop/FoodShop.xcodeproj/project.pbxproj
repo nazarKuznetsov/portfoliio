@@ -14,6 +14,10 @@
 		847994F42BC559740097B036 /* FoodShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994F32BC559740097B036 /* FoodShopTests.swift */; };
 		847994FE2BC559740097B036 /* FoodShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FD2BC559740097B036 /* FoodShopUITests.swift */; };
 		847995002BC559740097B036 /* FoodShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */; };
+		847995112BC55D6A0097B036 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8479950E2BC55D690097B036 /* Gilroy-Bold.ttf */; };
+		847995122BC55D6A0097B036 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */; };
+		847995132BC55D6A0097B036 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */; };
+		847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995142BC55D850097B036 /* Gilroy-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		847994F92BC559740097B036 /* FoodShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847994FD2BC559740097B036 /* FoodShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITests.swift; sourceTree = "<group>"; };
 		847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8479950E2BC55D690097B036 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		847995142BC55D850097B036 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		847994E12BC5596D0097B036 /* FoodShop */ = {
 			isa = PBXGroup;
 			children = (
+				8479950D2BC55CE70097B036 /* font */,
 				847994E22BC5596D0097B036 /* FoodShopApp.swift */,
 				847994E42BC5596D0097B036 /* ContentView.swift */,
 				847994E62BC559730097B036 /* Assets.xcassets */,
@@ -125,6 +134,17 @@
 				847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */,
 			);
 			path = FoodShopUITests;
+			sourceTree = "<group>";
+		};
+		8479950D2BC55CE70097B036 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				847995142BC55D850097B036 /* Gilroy-Medium.ttf */,
+				8479950E2BC55D690097B036 /* Gilroy-Bold.ttf */,
+				847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */,
+				8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847995132BC55D6A0097B036 /* Gilroy-Regular.ttf in Resources */,
+				847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */,
+				847995112BC55D6A0097B036 /* Gilroy-Bold.ttf in Resources */,
+				847995122BC55D6A0097B036 /* Gilroy-SemiBold.ttf in Resources */,
 				847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */,
 				847994E72BC559730097B036 /* Assets.xcassets in Resources */,
 			);
