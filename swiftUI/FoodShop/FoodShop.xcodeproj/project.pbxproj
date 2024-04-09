@@ -17,6 +17,7 @@
 		847995132BC55D6A0097B036 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */; };
 		847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995142BC55D850097B036 /* Gilroy-Medium.ttf */; };
 		847995172BC55E2C0097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847995162BC55E2C0097B036 /* Assets.xcassets */; };
+		8479951F2BC564090097B036 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479951E2BC564090097B036 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		847995142BC55D850097B036 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		847995162BC55E2C0097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847995182BC5621C0097B036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8479951E2BC564090097B036 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,14 @@
 		847994E12BC5596D0097B036 /* FoodShop */ = {
 			isa = PBXGroup;
 			children = (
-				847995182BC5621C0097B036 /* Info.plist */,
-				847995162BC55E2C0097B036 /* Assets.xcassets */,
+				8479951C2BC563D30097B036 /* UICommon */,
+				8479951B2BC563CD0097B036 /* ViewModel */,
+				8479951A2BC563C70097B036 /* Model */,
+				847995192BC563C10097B036 /* View */,
 				8479950D2BC55CE70097B036 /* font */,
 				847994E22BC5596D0097B036 /* FoodShopApp.swift */,
+				847995182BC5621C0097B036 /* Info.plist */,
+				847995162BC55E2C0097B036 /* Assets.xcassets */,
 				847994E82BC559730097B036 /* Preview Content */,
 			);
 			path = FoodShop;
@@ -144,6 +150,43 @@
 				8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */,
 			);
 			path = font;
+			sourceTree = "<group>";
+		};
+		847995192BC563C10097B036 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8479951D2BC563F60097B036 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8479951A2BC563C70097B036 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8479951B2BC563CD0097B036 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8479951C2BC563D30097B036 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		8479951D2BC563F60097B036 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8479951E2BC564090097B036 /* WelcomeView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */,
+				8479951F2BC564090097B036 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
