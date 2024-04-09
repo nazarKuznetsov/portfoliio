@@ -18,6 +18,7 @@
 		847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995142BC55D850097B036 /* Gilroy-Medium.ttf */; };
 		847995172BC55E2C0097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847995162BC55E2C0097B036 /* Assets.xcassets */; };
 		8479951F2BC564090097B036 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479951E2BC564090097B036 /* WelcomeView.swift */; };
+		847995212BC564EB0097B036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847995202BC564EB0097B036 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		847995162BC55E2C0097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847995182BC5621C0097B036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8479951E2BC564090097B036 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		847995202BC564EB0097B036 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				847995182BC5621C0097B036 /* Info.plist */,
 				847995162BC55E2C0097B036 /* Assets.xcassets */,
 				847994E82BC559730097B036 /* Preview Content */,
+				847995202BC564EB0097B036 /* LaunchScreen.storyboard */,
 			);
 			path = FoodShop;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */,
 				847995112BC55D6A0097B036 /* Gilroy-Bold.ttf in Resources */,
 				847995122BC55D6A0097B036 /* Gilroy-SemiBold.ttf in Resources */,
+				847995212BC564EB0097B036 /* LaunchScreen.storyboard in Resources */,
 				847995172BC55E2C0097B036 /* Assets.xcassets in Resources */,
 				847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */,
 			);
