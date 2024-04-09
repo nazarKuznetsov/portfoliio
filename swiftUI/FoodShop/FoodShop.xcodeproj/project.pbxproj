@@ -7,61 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		847994AD2BC557F40097B036 /* FoodShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994AC2BC557F40097B036 /* FoodShopApp.swift */; };
-		847994AF2BC557F40097B036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994AE2BC557F40097B036 /* ContentView.swift */; };
-		847994B12BC557F60097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994B02BC557F60097B036 /* Assets.xcassets */; };
-		847994B42BC557F60097B036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994B32BC557F60097B036 /* Preview Assets.xcassets */; };
-		847994BE2BC557F70097B036 /* FoodShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994BD2BC557F70097B036 /* FoodShopTests.swift */; };
-		847994C82BC557F70097B036 /* FoodShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994C72BC557F70097B036 /* FoodShopUITests.swift */; };
-		847994CA2BC557F70097B036 /* FoodShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994C92BC557F70097B036 /* FoodShopUITestsLaunchTests.swift */; };
+		847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E22BC5596D0097B036 /* FoodShopApp.swift */; };
+		847994E52BC5596D0097B036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E42BC5596D0097B036 /* ContentView.swift */; };
+		847994E72BC559730097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994E62BC559730097B036 /* Assets.xcassets */; };
+		847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994E92BC559730097B036 /* Preview Assets.xcassets */; };
+		847994F42BC559740097B036 /* FoodShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994F32BC559740097B036 /* FoodShopTests.swift */; };
+		847994FE2BC559740097B036 /* FoodShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FD2BC559740097B036 /* FoodShopUITests.swift */; };
+		847995002BC559740097B036 /* FoodShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		847994BA2BC557F70097B036 /* PBXContainerItemProxy */ = {
+		847994F02BC559740097B036 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 847994A12BC557F40097B036 /* Project object */;
+			containerPortal = 847994D72BC5596D0097B036 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 847994A82BC557F40097B036;
+			remoteGlobalIDString = 847994DE2BC5596D0097B036;
 			remoteInfo = FoodShop;
 		};
-		847994C42BC557F70097B036 /* PBXContainerItemProxy */ = {
+		847994FA2BC559740097B036 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 847994A12BC557F40097B036 /* Project object */;
+			containerPortal = 847994D72BC5596D0097B036 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 847994A82BC557F40097B036;
+			remoteGlobalIDString = 847994DE2BC5596D0097B036;
 			remoteInfo = FoodShop;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		847994A92BC557F40097B036 /* FoodShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		847994AC2BC557F40097B036 /* FoodShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopApp.swift; sourceTree = "<group>"; };
-		847994AE2BC557F40097B036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		847994B02BC557F60097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		847994B32BC557F60097B036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		847994B92BC557F70097B036 /* FoodShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		847994BD2BC557F70097B036 /* FoodShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopTests.swift; sourceTree = "<group>"; };
-		847994C32BC557F70097B036 /* FoodShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		847994C72BC557F70097B036 /* FoodShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITests.swift; sourceTree = "<group>"; };
-		847994C92BC557F70097B036 /* FoodShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		847994DF2BC5596D0097B036 /* FoodShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847994E22BC5596D0097B036 /* FoodShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopApp.swift; sourceTree = "<group>"; };
+		847994E42BC5596D0097B036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		847994E62BC559730097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847994E92BC559730097B036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		847994EF2BC559740097B036 /* FoodShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847994F32BC559740097B036 /* FoodShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopTests.swift; sourceTree = "<group>"; };
+		847994F92BC559740097B036 /* FoodShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847994FD2BC559740097B036 /* FoodShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITests.swift; sourceTree = "<group>"; };
+		847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		847994A62BC557F40097B036 /* Frameworks */ = {
+		847994DC2BC5596D0097B036 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994B62BC557F70097B036 /* Frameworks */ = {
+		847994EC2BC559740097B036 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994C02BC557F70097B036 /* Frameworks */ = {
+		847994F62BC559740097B036 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,58 +71,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		847994A02BC557F40097B036 = {
+		847994D62BC5596D0097B036 = {
 			isa = PBXGroup;
 			children = (
-				847994AB2BC557F40097B036 /* FoodShop */,
-				847994BC2BC557F70097B036 /* FoodShopTests */,
-				847994C62BC557F70097B036 /* FoodShopUITests */,
-				847994AA2BC557F40097B036 /* Products */,
+				847994E12BC5596D0097B036 /* FoodShop */,
+				847994F22BC559740097B036 /* FoodShopTests */,
+				847994FC2BC559740097B036 /* FoodShopUITests */,
+				847994E02BC5596D0097B036 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		847994AA2BC557F40097B036 /* Products */ = {
+		847994E02BC5596D0097B036 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				847994A92BC557F40097B036 /* FoodShop.app */,
-				847994B92BC557F70097B036 /* FoodShopTests.xctest */,
-				847994C32BC557F70097B036 /* FoodShopUITests.xctest */,
+				847994DF2BC5596D0097B036 /* FoodShop.app */,
+				847994EF2BC559740097B036 /* FoodShopTests.xctest */,
+				847994F92BC559740097B036 /* FoodShopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		847994AB2BC557F40097B036 /* FoodShop */ = {
+		847994E12BC5596D0097B036 /* FoodShop */ = {
 			isa = PBXGroup;
 			children = (
-				847994AC2BC557F40097B036 /* FoodShopApp.swift */,
-				847994AE2BC557F40097B036 /* ContentView.swift */,
-				847994B02BC557F60097B036 /* Assets.xcassets */,
-				847994B22BC557F60097B036 /* Preview Content */,
+				847994E22BC5596D0097B036 /* FoodShopApp.swift */,
+				847994E42BC5596D0097B036 /* ContentView.swift */,
+				847994E62BC559730097B036 /* Assets.xcassets */,
+				847994E82BC559730097B036 /* Preview Content */,
 			);
 			path = FoodShop;
 			sourceTree = "<group>";
 		};
-		847994B22BC557F60097B036 /* Preview Content */ = {
+		847994E82BC559730097B036 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				847994B32BC557F60097B036 /* Preview Assets.xcassets */,
+				847994E92BC559730097B036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		847994BC2BC557F70097B036 /* FoodShopTests */ = {
+		847994F22BC559740097B036 /* FoodShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				847994BD2BC557F70097B036 /* FoodShopTests.swift */,
+				847994F32BC559740097B036 /* FoodShopTests.swift */,
 			);
 			path = FoodShopTests;
 			sourceTree = "<group>";
 		};
-		847994C62BC557F70097B036 /* FoodShopUITests */ = {
+		847994FC2BC559740097B036 /* FoodShopUITests */ = {
 			isa = PBXGroup;
 			children = (
-				847994C72BC557F70097B036 /* FoodShopUITests.swift */,
-				847994C92BC557F70097B036 /* FoodShopUITestsLaunchTests.swift */,
+				847994FD2BC559740097B036 /* FoodShopUITests.swift */,
+				847994FF2BC559740097B036 /* FoodShopUITestsLaunchTests.swift */,
 			);
 			path = FoodShopUITests;
 			sourceTree = "<group>";
@@ -130,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		847994A82BC557F40097B036 /* FoodShop */ = {
+		847994DE2BC5596D0097B036 /* FoodShop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 847994CD2BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShop" */;
+			buildConfigurationList = 847995032BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShop" */;
 			buildPhases = (
-				847994A52BC557F40097B036 /* Sources */,
-				847994A62BC557F40097B036 /* Frameworks */,
-				847994A72BC557F40097B036 /* Resources */,
+				847994DB2BC5596D0097B036 /* Sources */,
+				847994DC2BC5596D0097B036 /* Frameworks */,
+				847994DD2BC5596D0097B036 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +144,69 @@
 			);
 			name = FoodShop;
 			productName = FoodShop;
-			productReference = 847994A92BC557F40097B036 /* FoodShop.app */;
+			productReference = 847994DF2BC5596D0097B036 /* FoodShop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		847994B82BC557F70097B036 /* FoodShopTests */ = {
+		847994EE2BC559740097B036 /* FoodShopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 847994D02BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShopTests" */;
+			buildConfigurationList = 847995062BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShopTests" */;
 			buildPhases = (
-				847994B52BC557F70097B036 /* Sources */,
-				847994B62BC557F70097B036 /* Frameworks */,
-				847994B72BC557F70097B036 /* Resources */,
+				847994EB2BC559740097B036 /* Sources */,
+				847994EC2BC559740097B036 /* Frameworks */,
+				847994ED2BC559740097B036 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				847994BB2BC557F70097B036 /* PBXTargetDependency */,
+				847994F12BC559740097B036 /* PBXTargetDependency */,
 			);
 			name = FoodShopTests;
 			productName = FoodShopTests;
-			productReference = 847994B92BC557F70097B036 /* FoodShopTests.xctest */;
+			productReference = 847994EF2BC559740097B036 /* FoodShopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		847994C22BC557F70097B036 /* FoodShopUITests */ = {
+		847994F82BC559740097B036 /* FoodShopUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 847994D32BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShopUITests" */;
+			buildConfigurationList = 847995092BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShopUITests" */;
 			buildPhases = (
-				847994BF2BC557F70097B036 /* Sources */,
-				847994C02BC557F70097B036 /* Frameworks */,
-				847994C12BC557F70097B036 /* Resources */,
+				847994F52BC559740097B036 /* Sources */,
+				847994F62BC559740097B036 /* Frameworks */,
+				847994F72BC559740097B036 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				847994C52BC557F70097B036 /* PBXTargetDependency */,
+				847994FB2BC559740097B036 /* PBXTargetDependency */,
 			);
 			name = FoodShopUITests;
 			productName = FoodShopUITests;
-			productReference = 847994C32BC557F70097B036 /* FoodShopUITests.xctest */;
+			productReference = 847994F92BC559740097B036 /* FoodShopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		847994A12BC557F40097B036 /* Project object */ = {
+		847994D72BC5596D0097B036 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					847994A82BC557F40097B036 = {
+					847994DE2BC5596D0097B036 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					847994B82BC557F70097B036 = {
+					847994EE2BC559740097B036 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 847994A82BC557F40097B036;
+						TestTargetID = 847994DE2BC5596D0097B036;
 					};
-					847994C22BC557F70097B036 = {
+					847994F82BC559740097B036 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 847994A82BC557F40097B036;
+						TestTargetID = 847994DE2BC5596D0097B036;
 					};
 				};
 			};
-			buildConfigurationList = 847994A42BC557F40097B036 /* Build configuration list for PBXProject "FoodShop" */;
+			buildConfigurationList = 847994DA2BC5596D0097B036 /* Build configuration list for PBXProject "FoodShop" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,36 +214,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 847994A02BC557F40097B036;
-			productRefGroup = 847994AA2BC557F40097B036 /* Products */;
+			mainGroup = 847994D62BC5596D0097B036;
+			productRefGroup = 847994E02BC5596D0097B036 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				847994A82BC557F40097B036 /* FoodShop */,
-				847994B82BC557F70097B036 /* FoodShopTests */,
-				847994C22BC557F70097B036 /* FoodShopUITests */,
+				847994DE2BC5596D0097B036 /* FoodShop */,
+				847994EE2BC559740097B036 /* FoodShopTests */,
+				847994F82BC559740097B036 /* FoodShopUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		847994A72BC557F40097B036 /* Resources */ = {
+		847994DD2BC5596D0097B036 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847994B42BC557F60097B036 /* Preview Assets.xcassets in Resources */,
-				847994B12BC557F60097B036 /* Assets.xcassets in Resources */,
+				847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */,
+				847994E72BC559730097B036 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994B72BC557F70097B036 /* Resources */ = {
+		847994ED2BC559740097B036 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994C12BC557F70097B036 /* Resources */ = {
+		847994F72BC559740097B036 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,49 +253,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		847994A52BC557F40097B036 /* Sources */ = {
+		847994DB2BC5596D0097B036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847994AF2BC557F40097B036 /* ContentView.swift in Sources */,
-				847994AD2BC557F40097B036 /* FoodShopApp.swift in Sources */,
+				847994E52BC5596D0097B036 /* ContentView.swift in Sources */,
+				847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994B52BC557F70097B036 /* Sources */ = {
+		847994EB2BC559740097B036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847994BE2BC557F70097B036 /* FoodShopTests.swift in Sources */,
+				847994F42BC559740097B036 /* FoodShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847994BF2BC557F70097B036 /* Sources */ = {
+		847994F52BC559740097B036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847994CA2BC557F70097B036 /* FoodShopUITestsLaunchTests.swift in Sources */,
-				847994C82BC557F70097B036 /* FoodShopUITests.swift in Sources */,
+				847995002BC559740097B036 /* FoodShopUITestsLaunchTests.swift in Sources */,
+				847994FE2BC559740097B036 /* FoodShopUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		847994BB2BC557F70097B036 /* PBXTargetDependency */ = {
+		847994F12BC559740097B036 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 847994A82BC557F40097B036 /* FoodShop */;
-			targetProxy = 847994BA2BC557F70097B036 /* PBXContainerItemProxy */;
+			target = 847994DE2BC5596D0097B036 /* FoodShop */;
+			targetProxy = 847994F02BC559740097B036 /* PBXContainerItemProxy */;
 		};
-		847994C52BC557F70097B036 /* PBXTargetDependency */ = {
+		847994FB2BC559740097B036 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 847994A82BC557F40097B036 /* FoodShop */;
-			targetProxy = 847994C42BC557F70097B036 /* PBXContainerItemProxy */;
+			target = 847994DE2BC5596D0097B036 /* FoodShop */;
+			targetProxy = 847994FA2BC559740097B036 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		847994CB2BC557F70097B036 /* Debug */ = {
+		847995012BC559740097B036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,7 +358,7 @@
 			};
 			name = Debug;
 		};
-		847994CC2BC557F70097B036 /* Release */ = {
+		847995022BC559740097B036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,7 +414,7 @@
 			};
 			name = Release;
 		};
-		847994CE2BC557F70097B036 /* Debug */ = {
+		847995042BC559740097B036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -443,7 +443,7 @@
 			};
 			name = Debug;
 		};
-		847994CF2BC557F70097B036 /* Release */ = {
+		847995052BC559740097B036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -472,7 +472,7 @@
 			};
 			name = Release;
 		};
-		847994D12BC557F70097B036 /* Debug */ = {
+		847995072BC559740097B036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -492,7 +492,7 @@
 			};
 			name = Debug;
 		};
-		847994D22BC557F70097B036 /* Release */ = {
+		847995082BC559740097B036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -512,7 +512,7 @@
 			};
 			name = Release;
 		};
-		847994D42BC557F70097B036 /* Debug */ = {
+		8479950A2BC559740097B036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -530,7 +530,7 @@
 			};
 			name = Debug;
 		};
-		847994D52BC557F70097B036 /* Release */ = {
+		8479950B2BC559740097B036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -551,43 +551,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		847994A42BC557F40097B036 /* Build configuration list for PBXProject "FoodShop" */ = {
+		847994DA2BC5596D0097B036 /* Build configuration list for PBXProject "FoodShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847994CB2BC557F70097B036 /* Debug */,
-				847994CC2BC557F70097B036 /* Release */,
+				847995012BC559740097B036 /* Debug */,
+				847995022BC559740097B036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		847994CD2BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShop" */ = {
+		847995032BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847994CE2BC557F70097B036 /* Debug */,
-				847994CF2BC557F70097B036 /* Release */,
+				847995042BC559740097B036 /* Debug */,
+				847995052BC559740097B036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		847994D02BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShopTests" */ = {
+		847995062BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847994D12BC557F70097B036 /* Debug */,
-				847994D22BC557F70097B036 /* Release */,
+				847995072BC559740097B036 /* Debug */,
+				847995082BC559740097B036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		847994D32BC557F70097B036 /* Build configuration list for PBXNativeTarget "FoodShopUITests" */ = {
+		847995092BC559740097B036 /* Build configuration list for PBXNativeTarget "FoodShopUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847994D42BC557F70097B036 /* Debug */,
-				847994D52BC557F70097B036 /* Release */,
+				8479950A2BC559740097B036 /* Debug */,
+				8479950B2BC559740097B036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 847994A12BC557F40097B036 /* Project object */;
+	rootObject = 847994D72BC5596D0097B036 /* Project object */;
 }
