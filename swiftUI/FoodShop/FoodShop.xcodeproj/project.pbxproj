@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		847994E32BC5596D0097B036 /* FoodShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E22BC5596D0097B036 /* FoodShopApp.swift */; };
 		847994E52BC5596D0097B036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994E42BC5596D0097B036 /* ContentView.swift */; };
-		847994E72BC559730097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994E62BC559730097B036 /* Assets.xcassets */; };
 		847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847994E92BC559730097B036 /* Preview Assets.xcassets */; };
 		847994F42BC559740097B036 /* FoodShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994F32BC559740097B036 /* FoodShopTests.swift */; };
 		847994FE2BC559740097B036 /* FoodShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847994FD2BC559740097B036 /* FoodShopUITests.swift */; };
@@ -18,6 +17,7 @@
 		847995122BC55D6A0097B036 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */; };
 		847995132BC55D6A0097B036 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */; };
 		847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847995142BC55D850097B036 /* Gilroy-Medium.ttf */; };
+		847995172BC55E2C0097B036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847995162BC55E2C0097B036 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		847994DF2BC5596D0097B036 /* FoodShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847994E22BC5596D0097B036 /* FoodShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopApp.swift; sourceTree = "<group>"; };
 		847994E42BC5596D0097B036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		847994E62BC559730097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847994E92BC559730097B036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847994EF2BC559740097B036 /* FoodShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847994F32BC559740097B036 /* FoodShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShopTests.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		8479950F2BC55D6A0097B036 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		847995102BC55D6A0097B036 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		847995142BC55D850097B036 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		847995162BC55E2C0097B036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 		847994E12BC5596D0097B036 /* FoodShop */ = {
 			isa = PBXGroup;
 			children = (
+				847995162BC55E2C0097B036 /* Assets.xcassets */,
 				8479950D2BC55CE70097B036 /* font */,
 				847994E22BC5596D0097B036 /* FoodShopApp.swift */,
 				847994E42BC5596D0097B036 /* ContentView.swift */,
-				847994E62BC559730097B036 /* Assets.xcassets */,
 				847994E82BC559730097B036 /* Preview Content */,
 			);
 			path = FoodShop;
@@ -255,8 +255,8 @@
 				847995152BC55D850097B036 /* Gilroy-Medium.ttf in Resources */,
 				847995112BC55D6A0097B036 /* Gilroy-Bold.ttf in Resources */,
 				847995122BC55D6A0097B036 /* Gilroy-SemiBold.ttf in Resources */,
+				847995172BC55E2C0097B036 /* Assets.xcassets in Resources */,
 				847994EA2BC559730097B036 /* Preview Assets.xcassets in Resources */,
-				847994E72BC559730097B036 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
